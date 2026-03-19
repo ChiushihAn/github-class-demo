@@ -1,7 +1,7 @@
-const int ledPin = 2;          // LED 引脚
+const int ledPin = 2;                      // LED 引脚
 unsigned long previousMillis = 0;  // 上一次状态改变的时间戳（毫秒）
 const long interval = 1000;        // 闪烁间隔 1000ms (1秒)
-int ledState = LOW;                // LED 当前状态
+int ledState = LOW;                   // LED 当前状态
 
 void setup() {
   Serial.begin(115200);          // 初始化串口通信
