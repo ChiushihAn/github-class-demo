@@ -14,3 +14,5 @@
 * lab03/lab03.ino:实现LED呼吸灯效果
 * ex02/ex02.ino:使用millis函数实现控制LED以1Hz的频率稳定闪烁
 * ex03/ex03.ino:使用millis函数控制LED产生SOS闪烁信息
+* lab02/lab02\_2.ino:完成lab02进阶实验，在未使用millis函数时实现SOS求救
+
