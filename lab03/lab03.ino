@@ -1,4 +1,3 @@
-// 定义LED引脚
 const int ledPin = 2;  
 
 // 设置PWM属性
