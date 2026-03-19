@@ -1,4 +1,3 @@
-// 定义LED引脚，ESP32通常板载LED连接在GPIO 2
 const int ledPin = 2; 
 
 void setup() {
