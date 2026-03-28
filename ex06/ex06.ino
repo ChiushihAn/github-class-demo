@@ -1,6 +1,6 @@
 // 定义两个 LED 引脚
-const int ledPinR = 2;   // 灯 A
-const int ledPinY = 4;   // 灯 B
+const int ledPinR = 2;   // 红灯 
+const int ledPinY = 4;   // 黄灯 
 
 // PWM 配置
 const int pwmFreq = 5000;       // 频率 5kHz
@@ -17,17 +17,17 @@ void setup() {
 }
 
 void loop() {
-  // 阶段1：灯A逐渐变亮，灯B逐渐变暗
+  // 阶段1：红灯逐渐变亮，黄灯 逐渐变暗
   for (int duty = 0; duty <= 255; duty++) {
-    ledcWrite(ledPinR, duty);           // A 亮度增加
-    ledcWrite(ledPinY, 255 - duty);     // B 亮度减少
+    ledcWrite(ledPinR, duty);           //红灯亮度增加
+    ledcWrite(ledPinY, 255 - duty);     // 黄灯 亮度减少
     delay(10);                          // 控制渐变速度（10ms 过渡平滑）
   }
   
-  // 阶段2：灯A逐渐变暗，灯B逐渐变亮
+  // 阶段2：红灯逐渐变暗，黄灯 逐渐变亮
   for (int duty = 255; duty >= 0; duty--) {
-    ledcWrite(ledPinR, duty);           // A 亮度减少
-    ledcWrite(ledPinY, 255 - duty);     // B 亮度增加
+    ledcWrite(ledPinR, duty);           // 红灯 亮度减少
+    ledcWrite(ledPinY, 255 - duty);     //黄灯 亮度增加
     delay(10);
   }
 }
