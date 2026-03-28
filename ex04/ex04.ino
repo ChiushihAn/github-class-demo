@@ -1,6 +1,6 @@
-// 定义触摸引脚 (T0对应GPIO4)
+// 定义触摸引脚 
 #define TOUCH_PIN 4
-// 定义LED引脚 (ESP32 DevKit板载LED通常是GPIO2)
+// 定义LED引脚 
 #define LED_PIN 2
 
 // 阈值：未触摸约1800，触摸时<10，设为100足够
@@ -11,7 +11,7 @@ bool ledState = false;          // LED当前状态
 bool stableTouchState = false;  // 当前稳定的触摸状态
 bool lastRawTouch = false;      // 上一次读取的原始触摸状态
 unsigned long lastDebounceTime = 0;
-const unsigned long debounceDelay = 50;  // 防抖时间（毫秒）
+const unsigned long debounceDelay = 50;  // 防抖时间
 
 void setup() {
   Serial.begin(115200);
@@ -37,7 +37,7 @@ void loop() {
     if (rawTouch != stableTouchState) {
       stableTouchState = rawTouch;
 
-      // 边缘检测：只在稳定状态从 false 变为 true（即触摸按下瞬间）翻转LED
+      // 边缘检测：只在稳定状态从 false 变为 true 翻转LED
       if (stableTouchState == true) {
         ledState = !ledState;
         digitalWrite(LED_PIN, ledState ? HIGH : LOW);
