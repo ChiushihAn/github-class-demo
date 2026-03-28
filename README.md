@@ -16,3 +16,5 @@
 * ex03/ex03.ino:使用millis函数控制LED产生SOS闪烁信息
 * lab02/lab02\_2.ino:完成lab02进阶实验，在未使用millis函数时实现SOS求救
 * 2026年3月26日早八打卡
+* ex04/ex04.ino:完成基于触摸传感器的“自锁开关”
+
