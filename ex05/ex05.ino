@@ -1,6 +1,6 @@
 // 引脚定义
-#define LED_PIN     2       // LED 引脚（ESP32 板载 LED 通常为 GPIO2）
-#define TOUCH_PIN   4       // 触摸引脚（T0 对应 GPIO4）
+#define LED_PIN     2       // LED 引脚
+#define TOUCH_PIN   4       // 触摸引脚
 
 // PWM 配置
 const int pwmFreq = 5000;       // PWM 频率 5kHz
