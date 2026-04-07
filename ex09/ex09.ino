@@ -3,7 +3,7 @@
 
 // ========== 用户配置区域 ==========
 const char* ssid = "你的WiFi名称";      // 修改你的WiFi名称
-const char* password = "你的WiFi密码";  // 修改为你的WiFi密码
+const char* password = "你的WiFi密码";  // 修改你的WiFi密码
 // ==================================
 
 // 触摸引脚定义 (T0 = GPIO4)
