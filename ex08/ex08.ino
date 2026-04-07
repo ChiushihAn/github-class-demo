@@ -3,7 +3,7 @@
 
 // ========== 用户配置区域 ==========
 const char* ssid = "你的WiFi名称";      //修改名称
-const char* password = "你的WiFi密码";  
+const char* password = "你的WiFi密码";    //修改密码
 // ==================================
 
 // 硬件引脚定义
