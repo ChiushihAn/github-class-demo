@@ -2,7 +2,7 @@
 #include <WebServer.h>
 
 // ========== 用户配置区域 ==========
-const char* ssid = "你的WiFi名称";      
+const char* ssid = "你的WiFi名称";      //修改名称
 const char* password = "你的WiFi密码";  
 // ==================================
 
