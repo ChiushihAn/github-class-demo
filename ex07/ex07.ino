@@ -4,7 +4,7 @@
 // ========== 用户配置区域 ==========
 const char* ssid = "你的WiFi名称";      // 修改为你的WiFi名称
 const char* password = "你的WiFi密码";  // 修改为你的WiFi密码
-const int LED_PIN = 2;                  // ESP32板载LED通常为GPIO2
+const int LED_PIN = 2;                  
 // ==================================
 
 WebServer server(80);
